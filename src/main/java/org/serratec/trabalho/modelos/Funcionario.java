@@ -12,7 +12,7 @@ import jakarta.validation.constraints.NotBlank;
 @Entity  
 public class Funcionario {
 
-    @Id  // Indica que esse campo é a chave primária
+    @Id 
     @GeneratedValue(strategy = GenerationType.IDENTITY) 
     private Long id;
 

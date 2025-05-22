@@ -37,7 +37,7 @@ public class FuncionarioController {
         Optional<Funcionario> funcionario = funcionarioRepository.findById(id);
         
         if (funcionario.isPresent()) {
-            return ResponseEntity.ok(funcionario.get());  // Retorna OK com o funcionário
+            return ResponseEntity.ok(funcionario.get());  // Retorna OK 
         } else {
             return ResponseEntity.notFound().build();  // Retorna 404 Not Found
         }

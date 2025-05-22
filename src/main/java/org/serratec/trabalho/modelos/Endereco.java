@@ -14,17 +14,17 @@ public class Endereco {
     @GeneratedValue(strategy = GenerationType.IDENTITY)  // O banco vai gerar automaticamente o ID
     private Long id;
 
-    @NotBlank(message = "A rua é obrigatória")  
+    @NotBlank(message = "Atributo obrigatório")  
     private String rua;
 
-    @NotBlank(message = "A cidade é obrigatória")  
+    @NotBlank(message = "Atributo obrigatório")  
     private String cidade;
 
-    @NotBlank(message = "O estado é obrigatório")  
+    @NotBlank(message = "Atributo obrigatório")  
     @Size(min = 2, max = 2, message = "O estado deve ter 2 caracteres") // 2 caracteres
     private String estado;
 
-    @NotBlank(message = "O CEP é obrigatório")  
+    @NotBlank(message = "Atributo obrigatório")  
     private String cep;
 
     public Endereco() {
