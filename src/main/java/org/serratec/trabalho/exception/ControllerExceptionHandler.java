@@ -31,7 +31,7 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
 
 	    return super.handleExceptionInternal(
 	        ex,
-	        new ResponseFuncionarioException(status.value(), "Campos inválidos, confira.", LocalDateTime.now(), erros),
+	        new ResponseFuncionarioException(status.value(), "Campos inválidos", LocalDateTime.now(), erros),
 	        headers,
 	        status,
 	        request
@@ -50,7 +50,7 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
 
 	    return super.handleExceptionInternal(
 	        ex,
-	        new ResponseFuncionarioException(status.value(), "JSON mal formatado ou campos inválidos, confira.", LocalDateTime.now(), erros),
+	        new ResponseFuncionarioException(status.value(), "erro de leitura", LocalDateTime.now(), erros),
 	        headers,
 	        status,
 	        request
